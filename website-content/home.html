@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#8a1538"/>
+<!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#8a1538"/>
+<!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="#8a1538"/>
+  <style>
+.box-home .top-bar{
+display: flex;
+justify-content: space-between;
+width: 90%;
+margin: auto;
+color: aliceblue;
+opacity: .8;}
+.box-home .top-bar .icons{
+    margin: 19.920px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.5em;}
+.box-home .top-bar .icons i:first-of-type{position: relative;}
+.box-home .top-bar .icons i:first-of-type::after{
+    content: "3";
+    position: absolute;
+    right: -3px;
+    top: 0;
+    color: aliceblue;
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.box-home .ads .text{margin-right: 2%;}
+.box-home .ads{
+    background-color: #ff4700;
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;}
+.box-home .ads p{
+    background-color: aliceblue;
+    width: fit-content;
+    color: #ff4700;
+    border-radius: 15px;
+    padding: 0px 10px ;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;}
+    .box-home .ads p img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;}
+.box-home .ads .text span{color: aliceblue;
+font-weight: bold;}
+.box-home .ads > img{
+    transform:  translateY(-10%);
+    height: 167px;}
+.box-home .groups{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    direction: ltr;
+    margin-top: 10%;}
+.box-home .groups span{
+    background-color: rgba(255, 255, 255, 0.484);
+    border-radius: 15px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    direction: rtl;
+    padding: 10px;
+    width: fit-content;
+    grid-row-start: 1;}
+.box-home .groups .group-a{grid-column-start: 3;}
+.box-home .groups .group-b{grid-column-start: 2;}
+.box-home .groups .group-c{grid-column-start: 1;}
+.box-home .groups img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 0;
+    border-radius: 50%;}
+.box-home .groups .group-a{background-color: #ff004c;}
+.box-home .groups span p{margin-top: 0;}
+.box-home .play-history{
+    color: aliceblue;
+    width: 90%;
+    margin:auto;
+    margin-top: 10%;}
+.box-home .history{display: flex;
+justify-content: space-between;}
+.box-home .play-history .box-one{
+    background-color: rgba(255, 255, 255, 0.484);
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 5%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;}
+    .box-home .play-history .box-one img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;}
+    .box-home .play-history .box-one p{
+    background-color: aliceblue;
+    width: 50px;
+    height: 60px;
+    color:#8a1538 ;
+    margin: 0;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+  </style>
+</head>
+<body>
+    <div class="box-home margin">
+        <div class="top-bar">
+            <h2>متابعة حية</h2>
+            <div class="icons">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="ads">
+            <div class="text">
+                <p>
+                    <img src="imgs/Flag_of_France_(1958–1976).svg.png" alt="">
+                    فرنسا
+                </p>
+               <span> فرنسا أبطال كأس العالم <br>
+                روسيا 2018</span>
+            </div>
+            <img src="imgs/out.-removebg-preview.png" alt="">
+        </div>
+        <div class="groups">
+            <span class="group-a">
+                <img src="imgs/qatar.jpg" alt="قطر">
+                <p>المجموعة A</p>
+            </span>
+            <span class="group-b">
+                <img src="imgs/england.png" alt="انجلترا">
+                <p>المجموعة B</p>
+            </span>
+            <span class="group-c">
+                <img src="imgs/argentina.jpg" alt="الارجنتين">
+                <p>المجموعة C</p>
+            </span>
+        </div>
+        <div class="play-history">
+            <div class="history">
+                <span>الأحد 20 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/qatar.jpg" alt="قطر">
+                <span>قطر <br>0</span>
+                <span>VS <br>-</span>
+                <span>الاكوادور <br>2</span>
+                <img src="imgs/ecuador.webp" alt="الاكوادور">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الأثنين 21 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/Senegal.png" alt="السنغال">
+                <span>السنغال <br>0</span>
+                <span>VS <br>-</span>
+                <span>هولندا <br>2</span>
+                <img src="imgs/Netherlands.png" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الثلاثاء 22 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/argentina.jpg" alt="السنغال">
+                <span>الارجنتين <br>1</span>
+                <span>VS <br>-</span>
+                <span>السعودية <br>2</span>
+                <img src="imgs/ksa.webp" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الاربعاء 23 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/Germany.webp" alt="السنغال">
+                <span>المانيا <br>1</span>
+                <span>VS <br>-</span>
+                <span>اليابان <br>2</span>
+                <img src="imgs/Japanese.png" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الخميس 24 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/Brasil.webp" alt="السنغال">
+                <span>البرازيل <br>2</span>
+                <span>VS <br>-</span>
+                <span>صربيا <br>0</span>
+                <img src="imgs/Serbia.png" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الجمعة 25 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/Netherlands.png" alt="السنغال">
+                <span>هولندا <br>1</span>
+                <span>VS <br>-</span>
+                <span>السنغال <br>1</span>
+                <img src="imgs/Senegal.png" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>السبت 26 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/argentina.jpg" alt="السنغال">
+                <span>الارجنتين <br>2</span>
+                <span>VS <br>-</span>
+                <span>المكسيك <br>0</span>
+                <img src="imgs/Mexico.webp" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الاحد 27 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/Morocco.png" alt="السنغال">
+                <span>المغرب <br>2</span>
+                <span>VS <br>-</span>
+                <span>بلجيكا <br>0</span>
+                <img src="imgs/Belgium.jpg" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الأثنين 28 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/Ghana.png" alt="السنغال">
+                <span>غانا <br>3</span>
+                <span>VS <br>-</span>
+                <span>كوريا الجنوبية <br>2</span>
+                <img src="imgs/Korea.png" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الثلاثاء 29 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/Senegal.png" alt="السنغال">
+                <span>السنغال <br>2</span>
+                <span>VS <br>-</span>
+                <span>الاكوادور <br>1</span>
+                <img src="imgs/ecuador.webp" alt="هولندا">
+                <p>تمت</p>
+            </div>
+            <br><br>
+            <div class="history">
+                <span>الاربعاء 30 نوفمبر</span>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="box-one">
+                <img src="imgs/ksa.webp" alt="السنغال">
+                <span>السعودية <br>1</span>
+                <span>VS <br>-</span>
+                <span>المكسيك <br>2</span>
+                <img src="imgs/Mexico.webp" alt="هولندا">
+                <p>تمت</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

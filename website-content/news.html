@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#8a1538"/>
+<!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#8a1538"/>
+<!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="#8a1538"/>
+ <style>
+.box-news{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;}
+.box-news .search{
+    background-color: rgba(255, 255, 255, 0.484);
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 30px;}
+.box-news .search i{
+    width: 50px;
+    text-align: center;}
+.box-news .search input[type="search"]{
+   background-color: transparent;
+    outline-style: none;
+    border: none;
+    width: 100%;
+    padding: 10px;}
+.box-news input[type="search"]::placeholder{color: #000;}
+.box-news .flags{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    direction: ltr;
+    width: 100%;
+    margin:10% auto;}
+.box-news .flags img{
+    width: 30px;
+    height: 30px;
+    border: solid 10px rgba(255, 255, 255, 0.484) ;
+    border-radius: 50%;}
+.box-news .flags span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff004c;
+    border-radius: 25px;
+    color: aliceblue;
+    padding:0px 10px;}
+.box-news .flags span img{border: none;
+padding-left: 5px;}
+.box-news .news .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    font-weight: bold;}
+.box-news .news .box img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;}
+.box-news .news .box p{padding: 0 20px;}
+.box-news .news .box p span{color: rgba(255, 255, 255, 0.484);}
+.important-news{
+  color: aliceblue;
+  font-weight: bold;}
+.important-news .text{display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    overflow: scroll;}
+.important-news p{
+    background-size: cover;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;}
+.important-news p:first-of-type{background-image: url(imgs/win-ksa.jpeg);}
+.important-news p:last-of-type{background-image: url(imgs/Japan.jpg);
+margin-left: -70%;}
+ </style>
+</head>
+<body>
+    <div class="box-news margin" >
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="البحث عن الفرق والمباريات واللاعبين" list="search">
+            <datalist id="search">
+                <option value="ياسر الشهراني"></option>
+                <option value="المنتخب السعودي"></option>
+                <option value="المنتخب القطري"></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </datalist>
+        </div>
+        <div class="flags">
+            <img src="imgs/Spain.png" alt="اسبانيا">
+            <img src="imgs/Flag_of_France_(1958–1976).svg.png" alt="فرنسا">
+            <img src="imgs/argentina.jpg" alt="الارجنتين">
+            <img src="imgs/Germany.webp" alt="المانيا">
+            <span>
+                <p>البرازيل</p>
+                <img src="imgs/Brasil.webp" alt="البرازيل">
+            </span>
+        </div>
+        <div class="news">
+            <div class="box">
+                <img src="imgs/Neymar.webp" alt="نيمار">
+                <p>قائمة البرازيل لكأس العالم 2022: من انضم إلى نيمار وفينسيوس جونيور ورافينيا؟
+                   <br>
+                    <span> الإثنين - 07 نوفمبر 2022 - 18:49</span>
+                    </p>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+            <div class="box">
+                <img src="imgs/Firmino‏.png" alt="فيرمينو">
+                <p>أبرزهم فيرمينو.. 5 نجوم غائبة عن قائمة البرازيل في كأس العالم 2022
+                   <br>
+                    <span> الجمعة - 11 نوفمبر 2022 - 18:35</span>
+                    </p>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+            <div class="box">
+                <img src="imgs/players.jpeg" alt="لاعبين">
+                <p>ردود أفعال مجنونة للاعبي البرازيل بعد استدعائهم لقائمة كأس العالم
+                   <br>
+                    <span> الإثنين - 07 نوفمبر 2022 - 19:11</span>
+                    </p>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+            <div class="box">
+                <img src="imgs/win.webp" alt="فوز">
+                <p>البرازيل في كأس العالم ... لأن الكتابة عن السامبا ليست بهذه السهولة
+                <br>
+                    <span> الإثنين - 14 نوفمبر 2022 - 18:46</span>
+                    </p>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="important-news">
+            <h2>اخبار هامة</h2>
+            <div class="text">
+                <p>فوز المنتخب السعودية على الارجنتين</p>
+                <p>فوز المنتخب الياباني على المانيا</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

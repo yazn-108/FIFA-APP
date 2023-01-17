@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>results</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#8a1538"/>
+<!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#8a1538"/>
+<!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="#8a1538"/>
+ <style>
+.box-results{color: aliceblue;}
+.box-results .main-sections{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5% auto;
+    font-weight: bold;}
+.box-results .main-sections span:nth-child(2){
+background-color: #ff004c;
+border-radius: 25px;
+padding: 10px;}
+.box-results .category{
+direction: ltr;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+font-weight: bold;
+margin-left: -8%;}
+.box-results .category span{
+    background-color:rgba(255, 255, 255, 0.484);
+    width: fit-content;
+    border-radius: 25px;
+    padding: 10px;}
+.box-results .category span:last-of-type{background-color:#ff4700 ;}
+.box-results .groups{
+    width: 90%;
+    margin:auto;}
+.box-results .groups .history{display: flex;
+    justify-content: space-between;
+    margin: 5% 0px;}
+.box-results .groups .background{
+    background-color:rgba(255, 255, 255, 0.484);
+        border-radius: 25px;}
+.box-results .groups .group-a .categories{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;}
+.box-results .groups .group-a .categories > div{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+    border-bottom: aliceblue solid 2px;
+    margin-bottom: 10px;}
+.box-results .groups .group-a .schedule{
+    display: flex;
+    justify-content: space-between;}
+.box-results .groups .group-a .schedule div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;}
+.box-results .groups .group-a .box-results span{
+    margin-left: 10px;
+    letter-spacing: 25px;
+    position: relative;}
+    .box-results .groups .group-a .box-results span::before{
+    content: "";
+    position: absolute;
+    border-bottom: aliceblue solid 2px;
+    width: 85%;
+    left: 0;
+    bottom: -10px;}
+    .box-results .groups .group-a .schedule img{
+    width: 20px;
+    height: 20px;
+    border-radius:50% ;}
+    .box-results .group-a .box-flags{padding-bottom: 20px;}
+    .box-results .group-a .box-flags span{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;}
+    .box-results .group-a .box-flags span:nth-child(1)::after{content: "هولندا";}
+    .box-results .group-a .box-flags span:nth-child(2)::after{content: "قطر";}
+    .box-results .group-a .box-flags span:nth-child(3)::after{content: "السنغال";}
+    .box-results .group-a .box-flags span:nth-child(4)::after{content: "الاكوادور";}
+    .box-results .group-b .box-flags span:nth-child(1)::after{content: "انجلترا";}
+    .box-results .group-b .box-flags span:nth-child(2)::after{content: "ويلز";}
+    .box-results .group-b .box-flags span:nth-child(3)::after{content: "الولايات المتحدة";}
+    .box-results .group-b .box-flags span:nth-child(4)::after{content: "اسبانيا";}
+ </style>
+</head>
+<body>
+<div class="box-results margin">
+            <div class="main-sections">
+                <span>المباريات</span>
+                <span>جدول الترتيب</span>
+                <span>الاحصائيات</span>
+            </div>
+            <div class="category">
+                <span>قبل النهائي</span>
+                <span>دور ال8</span>
+                <span>دور ال16</span>
+                <span>المجموعات</span>
+            </div>
+            <div class="groups">
+                <div class="history">
+                    <span>المجموعة A</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="background">
+                    <span class="group-a">
+                        <div class="categories">
+                            <p>الفرق</p>
+                        <div>
+                            <p>ف</p>
+                            <p>ت</p>
+                            <p>ل</p>
+                            <p>ع</p>
+                            <p>ن</p>
+                        </div>
+                        </div>
+                       <div class="schedule">
+                            <div class="box-flags">            
+                            <span><img src="imgs/Netherlands.png" alt="هولندا"></span>
+                            <span><img src="imgs/qatar.jpg" alt="قطر"></span>
+                            <span><img src="imgs/Senegal.png" alt="السنغال"></span>
+                            <span><img src="imgs/ecuador.webp" alt="الاكوادور"></span>
+                            </div>
+                            <div class="box-results">
+                            <span>41311</span>
+                            <span>33201</span>
+                            <span>21120</span>
+                            <span>12110</span>
+                            </div>
+                       </div>
+                    </span>
+                </div>
+                <br>
+                <div class="history">
+                    <span>المجموعة B</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="background">
+                    <span class="group-a group-b">
+                        <div class="categories">
+                            <p>الفرق</p>
+                        <div>
+                            <p>ف</p>
+                            <p>ت</p>
+                            <p>ل</p>
+                            <p>ع</p>
+                            <p>ن</p>
+                        </div>
+                        </div>
+                       <div class="schedule">
+                            <div class="box-flags">            
+                            <span><img src="imgs/england.png" alt="انجلترا"></span>
+                            <span><img src="imgs/wales.jpg" alt="ويلز"></span>
+                            <span><img src="imgs/usa.svg" alt="الولايات المتحدة"></span>
+                            <span><img src="imgs/Spain.png" alt="اسبانيا"></span>
+                            </div>
+                            <div class="box-results">
+                            <span>61402</span>
+                            <span>22220</span>
+                            <span>12110</span>
+                            <span>21120</span>
+                            </div>
+                       </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

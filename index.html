@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>app</title>
-    <link rel="stylesheet" href="External-section/style/style.css">
-    <link rel="stylesheet" href="External-section/style/normalize.css">
+    <link rel="stylesheet" href="website-content/normalize.css">
 <!-- Chrome, Firefox OS and Opera -->
 <meta name="theme-color" content="#8a1538"/>
 <!-- Windows Phone -->
@@ -14,14 +13,64 @@
 <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="#8a1538"/>
+  <style>
+    .app{max-width: 100%;}
+.img-head{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.359) 0px 0px 26px;}
+.enter-photo{
+    width: 100%;
+    display: flex;
+    justify-content:center;}
+.enter-photo img{
+width: 40%;
+margin-top: 10%;
+opacity: .7;}
+.text{padding-right: 5%;
+    color: aliceblue;
+    margin-top: 20%;}
+.text h2 span{font-size: 20px;}
+.text p{opacity: .7;}
+.enter-button{margin-top: 15%;
+    display: flex;
+    justify-content: space-evenly;}
+.enter-button a button{
+   color: #8a1538;
+   background-color: aliceblue;
+   padding: 12px;
+   border-radius: 15px;
+   border: none;}
+.enter-button > button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 12px;}
+
+
+    p{display: none;}
+      @media (min-width:768px) {
+        .app{display: none;}
+        body > p{
+          display: block;
+          color: aliceblue;
+          margin-top: 25%;
+          text-align: center;
+          font-size: xx-large;
+        }
+      }
+
+  </style>
 </head>
 <body>
+    <p>This template is designed for mobile screens only
+        <br>
+        هذا النموذج مصمم لشاشات الهواتف فقط</p>
 <div class="app">
     <div class="container">
-        <img src="External-section/img/World Cup 2022 - free version.webp" class="img-head">
+        <img src="website-content/imgs/World Cup 2022 - free version.webp" class="img-head">
         <div class="enter">
             <div class="enter-photo">
-                <img src="External-section/img/pngegg.png" alt="">
+                <img src="website-content/imgs/pngegg.png" alt="">
             </div>
             <div class="text">
 <h2>كأس العالم <br><span>قطر 2022</span></h2>
@@ -32,7 +81,7 @@
                 </p>
             </div>
          <div class="enter-button">
-    <a href="https://yazn-108.github.io/FIFA-APP2/" target="_self"><button>تسجيل الدخول</button></a>
+    <a href="website-content/index.html" target="_self"><button>تسجيل الدخول</button></a>
             <button>مستخدم جديد</button>
          </div>
 
